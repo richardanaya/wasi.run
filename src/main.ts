@@ -29,6 +29,7 @@ async function start(terminal:Terminal, app:string) {
   await wasi.instantiate(module, {});
   
   // Run the start function
+  wasi.start();
   const stdout = wasi.getStdoutString();
   
   terminal.write(`${stdout}`);
