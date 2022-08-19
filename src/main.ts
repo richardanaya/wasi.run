@@ -10,7 +10,7 @@ import { Buffer } from 'buffer'
 const params = new URLSearchParams(window.location.search);
 const app = params.get("app");
 
-async function start(terminal:Terminal){
+async function start(terminal:Terminal, app:string) {
   await init();
 
   const wasi = new WASI({
@@ -23,7 +23,7 @@ async function start(terminal:Terminal){
     ],
   });
   
-  const moduleBytes = fetch("https://deno.land/x/wasm/tests/demo.wasm");
+  const moduleBytes = fetch(app);
   const module = await WebAssembly.compileStreaming(moduleBytes);
   // Instantiate the WASI module
   await wasi.instantiate(module, {});
@@ -46,13 +46,13 @@ if (app !== null) {
     terminal.loadAddon(fitAddon);
     terminal.open(document.querySelector("html")!);
     fitAddon.fit();
-    start(terminal)
+    start(terminal, app)
   }
 } else {
   window.document.body.innerHTML = `
     <h1>Run WASI</h1>
     <p>
-        <code>https://wasi.run?app=http://test.com/test.wasm</code>
+        <code>https://wasi.run?app=https://deno.land/x/wasm/tests/demo.wasm</code>
     </p>
     `
 }
