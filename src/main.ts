@@ -3,7 +3,6 @@ import { init, WASI } from '@wasmer/wasi';
 
 import { Terminal } from "xterm";
 import { FitAddon } from 'xterm-addon-fit';
-import { WebglAddon } from 'xterm-addon-webgl';
 
 import { Buffer } from 'buffer'
 (globalThis as any).Buffer = Buffer
@@ -47,7 +46,6 @@ if (app !== null) {
     const terminal = new Terminal();
     const fitAddon = new FitAddon();
     terminal.loadAddon(fitAddon);
-    terminal.loadAddon(new WebglAddon());
     terminal.open(document.querySelector("html")!);
     fitAddon.fit();
     start(terminal, app)
