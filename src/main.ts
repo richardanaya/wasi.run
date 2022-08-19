@@ -63,7 +63,7 @@ if (app !== null) {
     <h6>Source: <a href="https://github.com/richardanaya/wasi.run">https://github.com/richardanaya/wasi.run</a></h6>
     </p>
     <p>
-    <h6><a href="https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/">What is WASI?</a> TLDR: Apps compiled to WebAssembly using a common system interface.</h6>
+    <h6><a href="https://www.youtube.com/watch?v=ggtEJC0Jv8A">What is WASI?</a> TLDR: Apps compiled to WebAssembly using a common system interface.</h6>
     </p>
     
     `
