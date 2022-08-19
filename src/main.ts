@@ -56,6 +56,12 @@ if (app !== null) {
         <code>https://wasi.run?app=https://deno.land/x/wasm/tests/demo.wasm</code>
     </p>
     <p>
+    <p>
     Source: <a href="https://github.com/richardanaya/wasi.run">https://github.com/richardanaya/wasi.run</a>
+    </p>
+    <p>
+    <h6><a href="https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/">What is WASI?</a> TLDR: Apps compiled to WebAssembly using a common system interface.</h6>
+    </p>
+    
     `
 }
