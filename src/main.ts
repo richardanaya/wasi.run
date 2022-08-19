@@ -29,10 +29,9 @@ async function start(terminal:Terminal){
   await wasi.instantiate(module, {});
   
   // Run the start function
-  const exitCode = wasi.start();
   const stdout = wasi.getStdoutString();
   
-  terminal.write(`${stdout}(exit code: ${exitCode})`);
+  terminal.write(`${stdout}`);
 }
 
 if (app !== null) {
