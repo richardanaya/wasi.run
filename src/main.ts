@@ -30,9 +30,9 @@ async function start(terminal:Terminal, app:string) {
   
   // Run the start function
   wasi.start();
-  const stdout = wasi.getStdoutString();
+  const stdout = wasi.getStdoutBuffer();
   
-  terminal.write(`${stdout}`);
+  terminal.write(stdout);
 }
 
 if (app !== null) {
@@ -55,5 +55,7 @@ if (app !== null) {
     <p>
         <code>https://wasi.run?app=https://deno.land/x/wasm/tests/demo.wasm</code>
     </p>
+    <p>
+    Source: <a href="https://github.com/richardanaya/wasi.run">https://github.com/richardanaya/wasi.run</a>
     `
 }
