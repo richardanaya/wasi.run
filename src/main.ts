@@ -20,4 +20,11 @@ if (app !== null) {
     terminal.write("Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ");
     fitAddon.fit();
   }
+} else {
+  window.document.body.innerHTML = `
+    <h1>Run WASI</h1>
+    <p>
+        <code>https://wasi.run?app=http://test.com/test.wasm</code>
+    </p>
+    `
 }
