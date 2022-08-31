@@ -28,7 +28,9 @@ if (app !== null) {
   document.body.style.margin = "0";
   document.body.style.backgroundColor = "#000";
   if (terminalElement) {
-    const terminal = new Terminal();
+    const terminal = new Terminal({
+      convertEol: true,
+    });
     const fitAddon = new FitAddon();
     terminal.loadAddon(fitAddon);
     terminal.open(document.querySelector("html")!);
