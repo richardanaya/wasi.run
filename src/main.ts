@@ -1,39 +1,24 @@
-// @ts-ignore-next-line
-import { init, WASI } from '@wasmer/wasi'; 
+import InlineWorker from './run.ts?worker&inline'
 
 import { Terminal } from "xterm";
 import { FitAddon } from 'xterm-addon-fit';
-
-import { Buffer } from 'buffer'
-(globalThis as any).Buffer = Buffer
 
 
 const params = new URLSearchParams(window.location.search);
 const app = params.get("app");
 
-async function start(terminal:Terminal, app:string) {
-  await init();
-
-  const wasi = new WASI({
-    env: {
-        // 'ENVVAR1': '1',
-        // 'ENVVAR2': '2'
-    },
-    args: [
-        // 'command', 'arg1', 'arg2'
-    ],
-  });
-  
-  const moduleBytes = fetch(app);
-  const module = await WebAssembly.compileStreaming(moduleBytes);
-  // Instantiate the WASI module
-  const instance = await wasi.instantiate(module, {});
-  
-  // Run the start function
-  wasi.start(instance);
-  const stdout = wasi.getStdoutBuffer();
-  
-  terminal.write(stdout);
+function start(terminal:Terminal, app:string) {
+  const a = new InlineWorker()
+  a.postMessage({app})
+  a.onmessage = (e) => {
+    const {stdout} = e.data;
+    const uint8 = new Uint8Array(stdout);
+    terminal.write(uint8)
+  }
+  terminal.onData((data)=>{
+    // @ts-ignore-next-line
+    a.postMessage({data});
+  })
 }
 
 if (app !== null) {
