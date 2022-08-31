@@ -27,10 +27,10 @@ async function start(terminal:Terminal, app:string) {
   const moduleBytes = fetch(app);
   const module = await WebAssembly.compileStreaming(moduleBytes);
   // Instantiate the WASI module
-  await wasi.instantiate(module, {});
+  const instance = await wasi.instantiate(module, {});
   
   // Run the start function
-  wasi.start();
+  wasi.start(instance);
   const stdout = wasi.getStdoutBuffer();
   
   terminal.write(stdout);

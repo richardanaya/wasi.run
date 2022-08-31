@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Aug 30 19:18:38 2022
+# Make data base, printed on Tue Aug 30 19:22:09 2022
 
 # Variables
 
@@ -18,6 +18,8 @@ make: *** No rule to make target `all'.  Stop.
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -32,14 +34,20 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile (from `Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# environment
+STARSHIP_SESSION_KEY = 2986197263087464
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_CWD = /
+WASMER_DIR = /Users/richardanaya/.wasmer
 # environment
-PATH = /Users/richardanaya/.wasmtime/bin:/Users/richardanaya/.cargo/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/Caskroom/miniconda/base/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+VSCODE_CWD = /Users/richardanaya/wasi.run
+# environment
+PATH = /Users/richardanaya/.wasmer/bin:/Users/richardanaya/.wasmtime/bin:/Users/richardanaya/.cargo/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/Caskroom/miniconda/base/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richardanaya/.wasmer/globals/wapm_packages/.bin
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+ALACRITTY_LOG = /var/folders/tp/pk9g3knj2z7dnsbwvh8dmgcr0000gn/T/Alacritty-478.log
 # environment
 LaunchInstanceID = F792AF8D-C99A-4E12-AF2C-DD6EF81536D5
 # environment
@@ -63,11 +71,13 @@ HOME = /Users/richardanaya
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
+VSCODE_CLI = 1
+# environment
 VSCODE_CODE_CACHE_PATH = /Users/richardanaya/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = richardanaya
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
@@ -80,12 +90,16 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 CONDA_DEFAULT_ENV = base
 # environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 2
+SHLVL = 4
+# environment
+WASMER_CACHE_DIR = /Users/richardanaya/.wasmer/cache
 # default
 MAKE_VERSION := 3.81
 # environment
@@ -115,7 +129,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.34422057.34422063
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.34422057.34422063.231E614D-9026-41B7-85D0-4F5FAAC9F9AA
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -140,6 +154,8 @@ SECURITYSESSIONID = 186a5
 SUFFIXES := 
 # environment
 _CE_M = 
+# environment
+_CE_CONDA = 
 # default
 .INCLUDE_DIRS = /usr/local/include
 # environment
@@ -147,13 +163,15 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /opt/homebrew/Caskroom/miniconda/base
 # environment
+TERM = xterm-256color
+# environment
 VSCODE_PID = 497
 # environment
-_CE_CONDA = 
+STARSHIP_SHELL = bash
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=69/1024=7%, Rehash=0, Collisions=2/93=2%
+# Load=78/1024=8%, Rehash=0, Collisions=6/102=6%
 
 # Pattern-specific Variable Values
 
@@ -175,7 +193,6 @@ build_examples:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 6):
 	cd examples/wasi_hello_world && cargo build --target wasm32-wasi --release
 	cp examples/wasi_hello_world/target/wasm32-wasi/release/wasi_hello_world.wasm public/wasi_hello_world.wasm
@@ -243,6 +260,6 @@ deploy: build
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 19:18:38 2022
+# Finished Make data base on Tue Aug 30 19:22:09 2022
 
  
