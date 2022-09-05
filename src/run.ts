@@ -22,7 +22,7 @@ self.addEventListener("message", async (e) => {
         ],
         });
         
-        const moduleBytes = fetch(app.url);
+        const moduleBytes = fetch(app);
         const module = await WebAssembly.compileStreaming(moduleBytes);
         // Instantiate the WASI module
         const instance = await wasi.instantiate(module, {});
