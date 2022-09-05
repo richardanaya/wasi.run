@@ -6,10 +6,11 @@ import { FitAddon } from 'xterm-addon-fit';
 
 const params = new URLSearchParams(window.location.search);
 const app = params.get("app");
+const input = params.get("input");
 
 function start(terminal:Terminal, app:string) {
   const a = new InlineWorker()
-  a.postMessage({app})
+  a.postMessage({app,data:input})
   a.onmessage = (e) => {
     const {stdout} = e.data;
     const uint8 = new Uint8Array(stdout);

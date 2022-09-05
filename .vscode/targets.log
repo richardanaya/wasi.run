@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Aug 30 19:22:09 2022
+# Make data base, printed on Mon Sep  5 10:09:54 2022
 
 # Variables
 
@@ -35,7 +35,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/make
 # environment
-STARSHIP_SESSION_KEY = 2986197263087464
+STARSHIP_SESSION_KEY = 1220412080492911
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
@@ -43,19 +43,19 @@ WASMER_DIR = /Users/richardanaya/.wasmer
 # environment
 VSCODE_CWD = /Users/richardanaya/wasi.run
 # environment
-PATH = /Users/richardanaya/.wasmer/bin:/Users/richardanaya/.wasmtime/bin:/Users/richardanaya/.cargo/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/Caskroom/miniconda/base/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/richardanaya/.wasmer/globals/wapm_packages/.bin
+PATH = /Users/richardanaya/.wasmtime/bin:/Users/richardanaya/.cargo/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/Caskroom/miniconda/base/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-ALACRITTY_LOG = /var/folders/tp/pk9g3knj2z7dnsbwvh8dmgcr0000gn/T/Alacritty-478.log
+ALACRITTY_LOG = /var/folders/tp/pk9g3knj2z7dnsbwvh8dmgcr0000gn/T/Alacritty-1619.log
 # environment
-LaunchInstanceID = F792AF8D-C99A-4E12-AF2C-DD6EF81536D5
+LaunchInstanceID = 9A9D9F85-382B-49FE-85FF-391EFABFF4B4
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0YEgPGGdtR/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0mqA0pOcPV/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -97,7 +97,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 4
+SHLVL = 3
 # environment
 WASMER_CACHE_DIR = /Users/richardanaya/.wasmer/cache
 # default
@@ -106,12 +106,16 @@ MAKE_VERSION := 3.81
 USER = richardanaya
 # makefile
 .DEFAULT_GOAL := build
+# environment
+TERM_SESSION_ID = 9E2BF6E8-4C06-4F93-ADC2-05819B4ED0CB
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 CONDA_SHLVL = 1
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = Apple_Terminal
 # default
 .VARIABLES := 
 # environment
@@ -129,7 +133,9 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.34422057.34422063.231E614D-9026-41B7-85D0-4F5FAAC9F9AA
+TERM_PROGRAM_VERSION = 440
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.34422057.34422063.DEE6B7EB-F82A-4656-837C-2F841D5ACCFF
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -147,7 +153,7 @@ LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /opt/homebrew/Caskroom/miniconda/base/bin/python
 # environment
-SECURITYSESSIONID = 186a5
+SECURITYSESSIONID = 186a4
 # automatic
 ^F = $(notdir $^)
 # default
@@ -165,13 +171,13 @@ CONDA_PREFIX = /opt/homebrew/Caskroom/miniconda/base
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 497
+VSCODE_PID = 7531
 # environment
 STARSHIP_SHELL = bash
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=78/1024=8%, Rehash=0, Collisions=6/102=6%
+# Load=81/1024=8%, Rehash=0, Collisions=6/105=6%
 
 # Pattern-specific Variable Values
 
@@ -179,7 +185,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777234, inode 34401098): 19 files, no impossibilities.
+# . (device 16777232, inode 34401098): 19 files, no impossibilities.
 
 # 19 files, no impossibilities in 1 directories.
 
@@ -260,6 +266,6 @@ deploy: build
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 19:22:09 2022
+# Finished Make data base on Mon Sep  5 10:09:54 2022
 
  
