@@ -4,6 +4,4 @@ A simple framework for running WASI WebAssembly modules on a browser terminal in
 
 Example:
 
-```
-https://wasi.run?app=http://test.com/test.wasm
-```
+[https://wasi.run?app=https://deno.land/x/wasm/tests/demo.wasm](https://wasi.run?app=https://deno.land/x/wasm/tests/demo.wasm)
