@@ -7,6 +7,6 @@ build_examples:
 	cp examples/wasi_hello_world/target/wasm32-wasi/release/wasi_hello_world.wasm public/wasi_hello_world.wasm
 
 deploy: build_examples build
-	git add .
+	git add -f docs
 	git commit -m "deploy"
 	git push origin main
