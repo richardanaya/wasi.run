@@ -7,10 +7,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
  
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Mon Sep  5 10:09:54 2022
+# Make data base, printed on Mon Sep  5 21:41:55 2022
 
 # Variables
 
@@ -18,8 +16,6 @@ make: *** No rule to make target `all'.  Stop.
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -34,28 +30,22 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# environment
-STARSHIP_SESSION_KEY = 1220412080492911
-# environment
-__CFBundleIdentifier = com.microsoft.VSCode
-# environment
-WASMER_DIR = /Users/richardanaya/.wasmer
-# environment
-VSCODE_CWD = /Users/richardanaya/wasi.run
-# environment
-PATH = /Users/richardanaya/.wasmtime/bin:/Users/richardanaya/.cargo/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/Caskroom/miniconda/base/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-ALACRITTY_LOG = /var/folders/tp/pk9g3knj2z7dnsbwvh8dmgcr0000gn/T/Alacritty-1619.log
+__CFBundleIdentifier = com.microsoft.VSCode
 # environment
-LaunchInstanceID = 9A9D9F85-382B-49FE-85FF-391EFABFF4B4
+VSCODE_CWD = /
+# environment
+PATH = /Users/richardanaya/.wasmtime/bin:/Users/richardanaya/.cargo/bin:/opt/homebrew/Caskroom/miniconda/base/bin:/opt/homebrew/Caskroom/miniconda/base/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+# environment
+LaunchInstanceID = 863E9844-D273-492F-A2DD-23CF92BC303F
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0mqA0pOcPV/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1uqgEAY92H/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -71,13 +61,11 @@ HOME = /Users/richardanaya
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CLI = 1
-# environment
 VSCODE_CODE_CACHE_PATH = /Users/richardanaya/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = richardanaya
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
@@ -90,32 +78,24 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 CONDA_DEFAULT_ENV = base
 # environment
 XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 3
-# environment
-WASMER_CACHE_DIR = /Users/richardanaya/.wasmer/cache
+SHLVL = 2
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = richardanaya
 # makefile
 .DEFAULT_GOAL := build
-# environment
-TERM_SESSION_ID = 9E2BF6E8-4C06-4F93-ADC2-05819B4ED0CB
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 CONDA_SHLVL = 1
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = Apple_Terminal
 # default
 .VARIABLES := 
 # environment
@@ -133,9 +113,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 440
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.34422057.34422063.DEE6B7EB-F82A-4656-837C-2F841D5ACCFF
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.34422057.34422063
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -153,15 +131,13 @@ LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /opt/homebrew/Caskroom/miniconda/base/bin/python
 # environment
-SECURITYSESSIONID = 186a4
+SECURITYSESSIONID = 186a5
 # automatic
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
 # environment
 _CE_M = 
-# environment
-_CE_CONDA = 
 # default
 .INCLUDE_DIRS = /usr/local/include
 # environment
@@ -169,15 +145,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /opt/homebrew/Caskroom/miniconda/base
 # environment
-TERM = xterm-256color
+VSCODE_PID = 378
 # environment
-VSCODE_PID = 7531
-# environment
-STARSHIP_SHELL = bash
+_CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=81/1024=8%, Rehash=0, Collisions=6/105=6%
+# Load=69/1024=7%, Rehash=0, Collisions=2/93=2%
 
 # Pattern-specific Variable Values
 
@@ -185,7 +159,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777232, inode 34401098): 19 files, no impossibilities.
+# . (device 16777234, inode 34401098): 19 files, no impossibilities.
 
 # 19 files, no impossibilities in 1 directories.
 
@@ -266,6 +240,8 @@ deploy: build
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Sep  5 10:09:54 2022
+# Finished Make data base on Mon Sep  5 21:41:55 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+

@@ -1,4 +1,6 @@
 use kimono::*;
+use std::io;
+use std::io::*;
 
 const STYLE: Style = Style::new()
     .padding_top(1)
@@ -17,4 +19,7 @@ fn main() {
     clear_screen();
     STYLE.render_at_position(10, 3, "着物");
     print!("\n\r");
+  let mut input = String::new();
+  io::stdin().read_line(&mut input).expect("error: unable to read user input");
+  println!("{}",input);
 }
