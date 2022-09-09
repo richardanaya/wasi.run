@@ -17,7 +17,7 @@ const STYLE: Style = Style::new()
 fn main() {
     colored::control::set_override(true);
     clear_screen();
-    STYLE.render_at_position(10, 3, "着物");
+    STYLE.render_at_position(10, 3, "type something");
     print!("\n\r");
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("error: unable to read user input");
